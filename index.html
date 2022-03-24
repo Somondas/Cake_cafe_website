@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="main_heading">
+        <div class="navigaion">
+
+            <nav>
+                <img src="images/cakecafe.png" alt="">
+                <ul>
+                    <li>cake dilivery</li>
+                    <li>how to order</li>
+                    <li>check more</li>
+                    <li>sign up</li>
+                </ul>
+                <div class="nav_menu">
+                    <a onclick="openMenu()"><i class="fas fa-bars"></i></a>
+                    <div>
+                        <ul id="menu">
+                            <li>cake dilivery</li>
+                            <li>how to order</li>
+                            <li>check more</li>
+                            <li>sign up</li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+           
+        </div>
+        <div class="content">
+                <h1>WELCOME TO <span>SD CAKE CAFE</span><br>A CAFE FOR CAKE LOVERS</h1>
+                <br>
+                <div class="btns">
+                    <a href="#" id="f-btn">order now</a>
+                    <a href="#" id = "l-btn">check for offers</a>
+                </div>
+                <footer>
+                   <p> All rights&copy;reserved</p>
+                </footer>
+        </div>
+        
+    </div>
+    <script>
+        const menu = document.getElementById("menu");
+
+        const openMenu =() =>{
+            if (menu.style.display == "none"){
+                menu.style.display = "block"
+            }else{
+                menu.style.display = "none"
+            }
+        }
+    </script>
+</body>
+</html>
